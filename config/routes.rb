@@ -1,4 +1,5 @@
 TwitClone::Application.routes.draw do
+  get "post/new"
   get "post/create"
   get "post/destroy"
   resources :users
