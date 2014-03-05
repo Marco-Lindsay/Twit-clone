@@ -1,4 +1,6 @@
 TwitClone::Application.routes.draw do
+  get "post/create"
+  get "post/destroy"
   resources :users
   #resources :posts
   get 'signup', to: 'users#new'
