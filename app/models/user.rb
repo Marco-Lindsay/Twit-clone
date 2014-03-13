@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 	has_many :posts
 
-	validates_presence_of :name#, :email
+	#validates_presence_of :name, :email
 
 	def user_info
 		"name: #{name} \n"+
