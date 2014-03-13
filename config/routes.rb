@@ -1,4 +1,5 @@
 TwitClone::Application.routes.draw do
+  devise_for :users
   get "post/new"
   get "post/create"
   get "post/destroy"
