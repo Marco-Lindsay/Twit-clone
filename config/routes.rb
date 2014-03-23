@@ -1,4 +1,6 @@
 TwitClone::Application.routes.draw do
+  resources :relationships
+
   devise_for :users
   get "post/new"
   get "post", to: 'post#index'

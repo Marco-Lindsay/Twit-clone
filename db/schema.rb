@@ -11,11 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140313014505) do
+ActiveRecord::Schema.define(version: 20140323013616) do
 
   create_table "posts", force: true do |t|
     t.text     "content"
     t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "relationships", force: true do |t|
+    t.integer  "watcher_id"
+    t.integer  "watched_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
