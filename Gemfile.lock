@@ -126,6 +126,8 @@ GEM
     sdoc (0.4.0)
       json (~> 1.8)
       rdoc (~> 4.0, < 5.0)
+    socialization (1.1.0)
+      activerecord
     sprockets (2.11.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -179,6 +181,7 @@ DEPENDENCIES
   rspec-rails
   sass-rails (~> 4.0.0)
   sdoc
+  socialization
   sqlite3
   therubyracer
   turbolinks

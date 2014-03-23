@@ -1,9 +1,13 @@
 class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
-  devise :database_authenticatable, :registerable,
+	devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
+	
 	has_many :posts,  dependent: :destroy
+	acts_as_follower
+	acts_as_followable
+
 	# has_many :watcher_relationships, class_name: "Relationship", foreign_key: "watched_id"
 	# has_many :watched_relationships, class_name: "Relationship", foreign_key: "watcher_id"
 	# has_many :watchers, through: :watcher_relationships
