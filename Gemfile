@@ -13,7 +13,7 @@ gem 'devise'
 gem "therubyracer"
 gem "less-rails" 
 gem "twitter-bootstrap-rails"
-gem "socialization"
+gem "acts_as_follower"
 
 group :development, :test do
 	gem 'sqlite3'
