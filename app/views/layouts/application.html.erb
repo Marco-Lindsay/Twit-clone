@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+<%# nav_bar :brand => "TwitClone", :brand_link => new_user_path, :responsive => true  %>
+<div class="navbar navbar-inverse ">
+  <div class="navbar-inner">
+    <div class="container">
+        <a class="brand" href="/signup">
+          TwitClone
+        </a>
+        
+    </div>
+  </div>
+</div>
+ 
+
   <title>TwitClone</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
+
+
 <body>
-	<p class="notice"><%= notice %></p>
-	<p class="alert"><%= alert %></p>
+	<!-- <p class="notice"><%= notice %></p>
+	<p class="alert"><%= alert %></p> -->
 <%= yield %>
 
 </body>
