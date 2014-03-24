@@ -15,7 +15,7 @@ class User < ActiveRecord::Base
 	# has_many :watcheds, through: :watched_relationships
 	
 
-	validates_presence_of :name, :email
+	#validates_presence_of :name, :email
 
 	def user_info
 		"name: #{name} \n"+
