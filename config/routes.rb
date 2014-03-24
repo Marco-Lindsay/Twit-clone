@@ -2,12 +2,12 @@ TwitClone::Application.routes.draw do
   resources :relationships
 
   devise_for :users
-  get "post/new"
-  get "post", to: 'post#index'
-  post "post/create", as: 'posts'
+  # get "post/new"
+  # get "post", to: 'post#index'
+  # post "post/create", as: 'posts'
   
   #get "post/destroy"
-  
+  resources :post
   resources :users
   
   get 'signup', to: 'users#new'
